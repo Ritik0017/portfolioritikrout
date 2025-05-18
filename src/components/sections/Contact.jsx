@@ -111,7 +111,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_ilxm5rq",
-        "template_0gsndgt",
+        "template_9teyavm",
         form.current,
         "6xf2xx35CqrS43fiV"
       )
@@ -119,6 +119,15 @@ const Contact = () => {
         (result) => {
           alert("Message Sent");
           form.current.reset();
+          emailjs.send(
+          "service_ilxm5rq",
+          "template_13a6nbn", // 
+          {
+            from_name: form.current.from_name.value,
+            to_email: form.current.from_email.value,
+          },
+          "6xf2xx35CqrS43fiV"
+        );
         },
         (error) => {
             console.log(error);
