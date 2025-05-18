@@ -100,7 +100,7 @@ const Footer = () => {
             </SocialMediaIcon >
             
         </SocialMediaIcons>
-        <Copyright>&copy; 2025 Ritik Rout. All rights reserve.</Copyright>
+        <Copyright>&copy; 2025 Ritik Rout. All rights reserved.</Copyright>
     </FooterWrapper>
   </FooterContainer>
   
